@@ -1,0 +1,96 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7f8fa;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 20px;
+    width: 80%;
+    max-width: 600px;
+}
+
+h1 {
+    margin-bottom: 30px;
+    color: #333;
+    font-size: 2rem;
+}
+
+#number-display {
+    font-size: 3rem;
+    margin: 30px 0;
+    color: #007BFF;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+#number-display.small-text {
+    font-size: 1.5rem;
+    color: #555;
+}
+
+#generate-btn {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: #ffffff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+#generate-btn:hover {
+    background-color: #0056b3;
+    box-shadow: 0 8px 20px rgba(0, 123, 255, 0.3);
+}
+
+#generate-btn:active {
+    background-color: #004494;
+}
+
+.ad-banner {
+    width: 100%;
+    max-width: 600px;
+    margin: 10px 0;
+    text-align: center;
+    height: auto;
+    max-height: 25vh;
+}
+
+.ad-banner img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #888;
+    margin-top: 10px;
+}
+
+footer a {
+    color: #007BFF;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+footer a:hover {
+    color: #0056b3;
+}
