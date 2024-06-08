@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1-100 Random Number Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>1-100 Random Number Generator</h1>
+        <div id="number-display" class="small-text">Click to generate</div>
+        <button id="generate-btn">Generate Number</button>
+        <footer>Made by <a href="https://google.com/badpage" target="_blank">html.io.solutions</a></footer>
+    </div>
+
+    <div class="ad-banner">
+        <a href="https://www.equiti.com/sc-en/" target="_blank">
+            <img src="https://storage.googleapis.com/website-production/uploads/2023/01/equiti-banner-ads-example.png" alt="Fake Advert">
+        </a>
+    </div>
+
+    <script>
+        const fixedNumbers = [27, 66, 12];
+        let index = 0;
+
+        document.getElementById('generate-btn').addEventListener('click', () => {
+            let displayNumber;
+            if (index < fixedNumbers.length) {
+                displayNumber = fixedNumbers[index];
+                index++;
+            } else {
+                displayNumber = Math.floor(Math.random() * 100) + 1;
+            }
+            document.getElementById('number-display').textContent = displayNumber;
+            document.getElementById('number-display').classList.remove('small-text');
+        });
+    </script>
+</body>
+</html>
